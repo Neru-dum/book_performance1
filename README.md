@@ -46,7 +46,7 @@ Things you may want to cover:
 - has_many : users, through: bookings
 - has_many : bookings
 
-## booking テーブル
+## bookings テーブル
 |Column|Type|Options|
 |------|----|-------|
 |library_id|integer|null: false, foreign_key: true|
