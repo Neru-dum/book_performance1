@@ -65,18 +65,3 @@ Things you may want to cover:
 
 ### Asociation
 - belongs_to :user
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
