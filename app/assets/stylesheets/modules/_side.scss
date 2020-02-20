@@ -1,0 +1,12 @@
+.wrapper{
+  height: 90%;
+  width: 100vw;
+  background-color: purple;
+  display: flex;
+  .side{
+    height: 100%;
+    width: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: blue;
+  }
+}
