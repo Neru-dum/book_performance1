@@ -1,0 +1,25 @@
+.new_contents{
+  height: 600px;
+  width: 100%;
+  // background-color: red;
+  margin: 100px 100px;
+  text-align: center;
+  font-size: 20px;
+
+  &__form{
+    height: 100%;
+    width: 100%;
+    input.text{
+      width: 400px;
+    }
+    input.submit{
+      width: 100px;
+      background-color: green;
+      color: white;
+    }
+  }
+}
+
+.create{
+  font-size: 30px;
+}

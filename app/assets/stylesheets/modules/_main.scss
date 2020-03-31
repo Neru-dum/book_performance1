@@ -23,6 +23,9 @@ body{
          height: 230px;
          width: 150px;
        }
+      .btn{
+        @include btn;
+      }
     }
     &__book2{
       @include size;
@@ -30,6 +33,12 @@ body{
          height: 230px;
          width: 150px;
        }
+       .btn{
+         @include btn;
+       }
+    }
+    &__book3{
+      @include size;
     }
   }
 }
