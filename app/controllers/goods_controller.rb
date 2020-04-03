@@ -1,4 +1,6 @@
 class GoodsController < ApplicationController
+  def index
+  end
   def search_rakuten_api(keyword)
     items = RakutenWebService::Ichiba::Item.search(keyword: keyword)
     images_arr = []
