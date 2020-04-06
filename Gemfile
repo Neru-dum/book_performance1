@@ -58,3 +58,4 @@ gem 'pry-rails'
 gem 'rakuten_web_service'
 gem 'carrierwave', '~> 2.0'
 gem 'mini_magick'
+gem 'mini_racer', platforms: :ruby
