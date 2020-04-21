@@ -1,9 +1,18 @@
--# .new_contents
--#   新規投稿
--#   .new_contents__form
--#     = render partial: 'form'
-
-.new_contents
-  楽天検索API
-  .new_contents__form
-    = render partial: 'form'
+.books_all
+  .new_contents    
+    %span.register 本の情報を登録して下さい。
+    .new_contents__form
+      = form_for([@lib]) do |f|
+        .new_register
+          %span.input_register タイトルを入力して下さい
+          = f.text_field :title,placeholder: "本のタイトルを入力して下さい" ,class: 'input_new'
+        .new_register
+          %span.input_register 著者を入力して下さい
+          = f.text_field :author,placeholder: "著者を入力して下さい" ,class: 'input_new'
+        .new_register
+          %span.input_register  画像を登録して下さい
+          = f.file_field :image 
+        .new_register 
+          = f.submit class: 'submit',value: '送信'
+        -# = f.file_field :image
+        -# = f.submit class: 'submit',value: '送信'

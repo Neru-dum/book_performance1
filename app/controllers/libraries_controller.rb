@@ -11,8 +11,9 @@ class LibrariesController < ApplicationController
   end
 
   def create
+    binding.pry
     @lib = Library.create(lib_params)
-    redirect_to "/libraries"
+    redirect_to "/libraries/new"
   end
   
   def show
@@ -21,8 +22,7 @@ class LibrariesController < ApplicationController
   private
 
   def lib_params
-    @kalum = :id, :title, :image
-    params.require(:library).permit(@kalum).merge(user_id: current_user.id)
+    params.require(:library).permit(:id,:title,:image,:author).merge(user_id: current_user.id)
   end
 
   def move_to_index
