@@ -1,10 +1,2 @@
 .contents
-  .contents__book1
-    %a <img src="https://images-fe.ssl-images-amazon.com/images/I/51IJB%2BGLrhL.jpg" alt="魍魎の匣 (講談社ノベルス)" style="border: none;" class="b1"
-    = form_tag('/libraries',method: :post) do
-      %input{type: "submit",class: "submit",value: "追加",class: "btn"}
-  .contents__book2
-    %a <img src="https://images-fe.ssl-images-amazon.com/images/I/51y159iB13L.jpg" alt="漫画 バビロン大富豪の教え 「お金」と「幸せ」を生み出す五つの黄金法則" style="border: none;" class="b2"
-    = form_for([@lib]) do |f|
-      = f.hidden_field :id, value:'ok'
-      = f.submit class: 'submit',value: '送信', class: 'btn'
+  = render "libraries/shared/header"

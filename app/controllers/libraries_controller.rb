@@ -11,7 +11,6 @@ class LibrariesController < ApplicationController
   end
 
   def create
-    binding.pry
     @lib = Library.create(lib_params)
     redirect_to "/libraries/new"
   end
