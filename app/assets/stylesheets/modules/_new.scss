@@ -23,8 +23,25 @@
           font-size: 20px;
         }
       }
+      .new_image_register{
+        width: 350px;
+        margin: 0 auto;
+        padding-top: 50px;
+        .input_register{
+          color: white;
+          font-size: 35px;
+        }
+        .input_new{
+          width: 300px;
+          font-size: 20px;
+        }
+        .image_select{
+          background-color: red;
+          color: white;
+        }
+      }
       input.submit{
-        width: 100px;
+        width: 350px;
         background-color: green;
         color: white;
       }

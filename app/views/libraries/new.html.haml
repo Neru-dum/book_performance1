@@ -9,10 +9,10 @@
         .new_register
           %span.input_register 著者を入力して下さい
           = f.text_field :author,placeholder: "著者を入力して下さい" ,class: 'input_new'
-        .new_register
+        .new_image_register
           %span.input_register  画像を登録して下さい
-          = f.file_field :image 
+          = f.file_field :image,style: "display:none", id:"img-file"
+          %label{for: "img-file"}
+            %span.image_select ファイルを選択して下さい。
         .new_register 
-          = f.submit class: 'submit',value: '送信'
-        -# = f.file_field :image
-        -# = f.submit class: 'submit',value: '送信'
+          = f.submit class: 'submit',value: '本の情報を登録します'
