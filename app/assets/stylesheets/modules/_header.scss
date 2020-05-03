@@ -1,0 +1,10 @@
+.header{
+  height: 100px;
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  .header-title{
+    font-size: 60px;
+    line-height: 100px;
+  }
+}

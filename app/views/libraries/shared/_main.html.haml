@@ -1,2 +1,5 @@
 .contents
-  = render "libraries/shared/header"
+  %span.setumei
+    このサイトは自身の読了した本を管理する目的で作られました。
+    .book_new_link
+      = link_to  "本を登録して下さい",new_library_path,class: "book_register"
