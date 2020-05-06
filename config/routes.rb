@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
+  devise_scope :user do
+    get '/users/sign_out' => 'devise/sessions#destroy'
+  end
   root to: 'libraries#index'
   resources :libraries, only: [:index, :new, :create]
-  resources :users, only: [:show,]
+  resources :users, only: [:index, :new,:show,:destroy]
   resources :goods
 end
