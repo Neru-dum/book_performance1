@@ -4,7 +4,27 @@
   display: flex;
   justify-content: center;
   .header-title{
+    margin-left: 300px;
     font-size: 60px;
     line-height: 100px;
+  }
+  .register{
+    width: 150px;
+    margin-left:  auto;
+    .book_register_group{
+      display: flex;
+      justify-content: center;
+      .book_register{ 
+        margin-top: 30px;  
+        text-decoration: none;   
+      }
+    }
+    .user_register_group{
+      display: flex;
+      justify-content: center;
+      .user_register{
+        text-decoration: none;
+      }         
+    }
   }
 }
