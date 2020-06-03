@@ -17,6 +17,11 @@ class LibrariesController < ApplicationController
   
   def show
   end
+
+  def homepage
+    @libraries = Library.all
+    @lib = Library.new
+  end
   
   private
 
